@@ -5,22 +5,22 @@
 
 
 var json = {
-	"friends": [
+	"drinks": [
 		{
-			"name": "Sandra Detamore",
-			"age": 43
+			"name": "Dirty Bomb",
+			"difficulty": 10
 		},
 		{
-			"name": "Carol Lewis",
-			"age": 39
+			"name": "Hairy Gorilla",
+			"difficulty": 8
 		},
 		{
-			"name": "Frank Lewis",
-			"age": 41
+			"name": "Funky Munky",
+			"difficulty": 5
 		},
 		{
-			"name": "Stan Greathouse",
-			"age": 35
+			"name": "Any Beer",
+			"difficulty": 2
 		}
 	
 	]
