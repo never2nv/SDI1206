@@ -28,7 +28,7 @@ var stringEmail = function (email) {
  }
  else
  {
- return true;
+ return stringEmail;
  }
 };
 
@@ -48,7 +48,7 @@ var stringPhone = function(phone) {
  }
  else
  {
- return true;
+  return stringEmail;
  }
 };
 
@@ -65,7 +65,7 @@ var stringURL = function (url) {
  }
  else
  {
- return true;
+  return stringEmail;
  }
 };
 
@@ -100,13 +100,14 @@ return n;
 var moneyFormat = function(number) {
 	var result = number.toFixed(2); 
 	console.log(result);
+	// Don't know if I should return moneyFormat or not?
 };
 
 
 // Fuzzy match number(s)
 var fuzzyNumbers= function(number1, number2, percent) {
     var fuzzy= number1*(percent/100), number2= +this;
-    return number2>= number1-fuzzy && number2<= number1+fuzzy;
+    return number2>= number1-fuzzy && number2<= number1+fuzzy;  // Hopefully this is correct math here.
 };
 
 
@@ -134,5 +135,7 @@ var stringConvert = function(number) {
 
 var keyCall = function(id) {
 	i = {0:"Index 0", 1:"Index 1", 2:"Index 2"};
-  console.log( i[id] );  
+  console.log( i[id] );
+  return i[id];
 };
+keyCall(0);
