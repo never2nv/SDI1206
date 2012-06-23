@@ -31,3 +31,23 @@ var stringEmail = function (email) {
  return true;
  }
 };
+
+
+
+
+/* String is phone number? Same type of filter used as e-mail but edited for phone numbering naturally.
+ * Based on the format for area code digits, first 3 digits of number, final four digits of number.
+ * i.e. 818-555-1234
+ */
+
+var stringPhone = function(phone) {
+ var phoneFilter =  /^((\+?1-)?\d\d\d-)?\d\d\d-\d\d\d\d$/;
+ if (!phoneFilter.test(phone))
+ {
+ return false;
+ }
+ else
+ {
+ return true;
+ }
+};
