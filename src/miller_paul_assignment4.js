@@ -79,3 +79,12 @@ var capitalizeString = function toTitleCase(str) {
 };
 
 
+/*Convert say a,b,c to a/b/c which I think you can do this way?
+ * i.e. slashSeperate("Hi how are you today"); would output Hi, how, are, you, today.
+ * I thought str.split('/'); would seperate with a / but it doesn't. I misunderstand the
+ * code I'm taking it; I'll try and fix before turning in.
+ */
+var slashSeperate = function(str) {
+var n=str.split(' '); 
+return n;
+};
