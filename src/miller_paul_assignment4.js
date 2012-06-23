@@ -121,3 +121,18 @@ var stringConvert = function(number) {
 	number + 0;
 	return number;
 };
+
+
+
+// ARRAYS
+
+
+/* Call a key for an array and output the array associated with that key.
+ * Fixed, was doing the opposite of the objective. Corrected now.
+ * Just an overall example which outputs the index # called.
+ */
+
+var keyCall = function(id) {
+	i = {0:"Index 0", 1:"Index 1", 2:"Index 2"};
+  console.log( i[id] );  
+};
