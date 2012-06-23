@@ -110,3 +110,14 @@ var fuzzyNumbers= function(number1, number2, percent) {
 };
 
 
+/* Convert "string numbers" into numbers.
+ * My take on this is: if you take a string and use the + operator, javascript will automatically convert the "String" number into an
+ * action number. Therefore, a simple way to do this is take the string or number and + 0 to it, and it will auto-convert it into a
+ * actual number?
+ * i.e. console.log(stringConvert("50")); even though implemented as a string, will auto input the string and return it as an actual number.
+ */
+
+var stringConvert = function(number) {
+	number + 0;
+	return number;
+};
