@@ -69,3 +69,13 @@ var stringURL = function (url) {
  }
 };
 
+
+
+/* Capitalize First Letter In Each New Word Within Any Given String
+ * i.e. capitalizeString("i wish i could do this right") would return "I Wish I Could Do This Right".
+ */
+var capitalizeString = function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+
