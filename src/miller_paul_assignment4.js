@@ -88,3 +88,16 @@ var slashSeperate = function(str) {
 var n=str.split(' '); 
 return n;
 };
+
+
+// NUMBERS
+
+
+/* Format number(s) for decimal placement. i.e. Money 2.1 -> 2.10
+ * i.e. ' moneyFormat(10); ' would return 10.00
+ */
+
+var moneyFormat = function(number) {
+	var result = number.toFixed(2); 
+	console.log(result);
+};
