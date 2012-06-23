@@ -101,3 +101,12 @@ var moneyFormat = function(number) {
 	var result = number.toFixed(2); 
 	console.log(result);
 };
+
+
+// Fuzzy match number(s)
+var fuzzyNumbers= function(number1, number2, percent) {
+    var fuzzy= number1*(percent/100), number2= +this;
+    return number2>= number1-fuzzy && number2<= number1+fuzzy;
+};
+
+
