@@ -51,3 +51,21 @@ var stringPhone = function(phone) {
  return true;
  }
 };
+
+
+
+// Validate URL
+
+var stringURL = function (url) {
+	// Fixed after googling every filter needed for html format.
+ var urlFilter = /^(ht|f)tps?:\/\/[a-z0-9-\.]+\.[a-z]{2,4}\/?([^\s&lt;&gt;\#%"\,\{\}\\|\\\^\[\]`]+)?$/  
+ if (!urlFilter.test(url))
+ {
+ return false;
+ }
+ else
+ {
+ return true;
+ }
+};
+
